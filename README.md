@@ -293,32 +293,32 @@ Now as the service is Up and Running we can test it with SoapUI
 1. First let's create a ***new Project***, select `File -> new SOAP Project` from SoapUI main menu.
 2. Fill in a Project name `LifeLeft`, copy & make sure your ***WSDL*** URL is correct, leave the rest as default
 
-![Screenshot demo](Screenshots/Demo/SoapUI%20(1).png "Deployement Preview")
+![Screenshot demo](Screenshots/Demo/SoapUI%20(1).png "Create new SoapUI Project - Screenshot demo")
 
 3. Create a new ***Test Case Suite***. Right-click project folder and select `new TestSuite`. You may leave the default name `TestSuite 1` 
 
-![Screenshot demo](Screenshots/Demo/SoapUI%20(2).png "Deployement Preview")
+![Screenshot demo](Screenshots/Demo/SoapUI%20(2).png "Create new TestSuite - Screenshot demo")
 
 4. Create a new ***Test Case*** for our **Webservice**. Expand the **WebService** to make the **Request** visible. Right-click Request select `Add to TestCase`. 
 
-![Screenshot demo](Screenshots/Demo/SoapUI%20(3).png "Deployement Preview")
+![Screenshot demo](Screenshots/Demo/SoapUI%20(3).png "Create new TestCase (Step 1) - Screenshot demo")
 
 5. In the **Popup** select `Create a new TestCase` (should be default). You may leave the default name `TestCase 1` 
 
-![Screenshot demo](Screenshots/Demo/SoapUI%20(4).png "Deployement Preview")
+![Screenshot demo](Screenshots/Demo/SoapUI%20(4).png "Create new TestCase (Step 2) - Screenshot demo")
 
-5. Add the ***Request*** to the ***TestCase***. In the **Popup** leave the default params and click `OK`
+6. Add the ***Request*** to the ***TestCase***. In the **Popup** leave the default params and click `OK`
 
-![Screenshot demo](Screenshots/Demo/SoapUI%20(5).png "Deployement Preview")
+![Screenshot demo](Screenshots/Demo/SoapUI%20(5).png "Add Request to TestCase - Screenshot demo")
 
 > At this point a window to test the **WebService** should appear. Enjoy testing
 
 
-6. Fill in some informations in the test XML file (arg0: name, arg1: gender, arg2: year of birth) and push the ***Green Triangle*** to run the test
+7. Fill in some informations in the test XML file (arg0: name, arg1: gender, arg2: year of birth) and push the ***Green Triangle*** to run the test
 
-![Screenshot demo](Screenshots/Demo/SoapUI%20(6).png "Deployement Preview")
+![Screenshot demo](Screenshots/Demo/SoapUI%20(6).png "Testing Preview")
 
 Here is the output
 
-![Screenshot demo](Screenshots/Demo/SoapUI%20(7).png "Deployement Preview")
+![Screenshot demo](Screenshots/Demo/SoapUI%20(7).png "Testing Preview")
 
