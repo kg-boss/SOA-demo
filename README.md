@@ -5,6 +5,7 @@
 + Java JDK 17 or higher. *The latest JDK is recommanded (JDK 19 by the time this file was created)*
 + Java JDK 8
 + GlassFish 5
++ SoapUI
 
 > If the requirements are not installed please download them before continuing.
 
@@ -283,4 +284,41 @@ Your ***WebService*** should be running on the following URL:
 http://localhost:8080/lifeleft/LifeLeft
 ```
 ![Screenshot demo](Screenshots/Demo/Run%20project%20(3).png "Deployement Preview")
+
+
+### Testing the Service 
+
+Now as the service is Up and Running we can test it with SoapUI
+
+1. First let's create a ***new Project***, select `File -> new SOAP Project` from SoapUI main menu.
+2. Fill in a Project name `LifeLeft`, copy & make sure your ***WSDL*** URL is correct, leave the rest as default
+
+![Screenshot demo](Screenshots/Demo/SoapUI%20(1).png "Deployement Preview")
+
+3. Create a new ***Test Case Suite***. Right-click project folder and select `new TestSuite`. You may leave the default name `TestSuite 1` 
+
+![Screenshot demo](Screenshots/Demo/SoapUI%20(2).png "Deployement Preview")
+
+4. Create a new ***Test Case*** for our **Webservice**. Expand the **WebService** to make the **Request** visible. Right-click Request select `Add to TestCase`. 
+
+![Screenshot demo](Screenshots/Demo/SoapUI%20(3).png "Deployement Preview")
+
+5. In the **Popup** select `Create a new TestCase` (should be default). You may leave the default name `TestCase 1` 
+
+![Screenshot demo](Screenshots/Demo/SoapUI%20(4).png "Deployement Preview")
+
+5. Add the ***Request*** to the ***TestCase***. In the **Popup** leave the default params and click `OK`
+
+![Screenshot demo](Screenshots/Demo/SoapUI%20(5).png "Deployement Preview")
+
+> At this point a window to test the **WebService** should appear. Enjoy testing
+
+
+6. Fill in some informations in the test XML file (arg0: name, arg1: gender, arg2: year of birth) and push the ***Green Triangle*** to run the test
+
+![Screenshot demo](Screenshots/Demo/SoapUI%20(6).png "Deployement Preview")
+
+Here is the output
+
+![Screenshot demo](Screenshots/Demo/SoapUI%20(7).png "Deployement Preview")
 
